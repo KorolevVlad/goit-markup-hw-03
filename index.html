@@ -9,25 +9,30 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/style.css" />
     
 </head>
 <body>
     <!-- шапка сайта -->
     <header class="contact-us">
-        <nav>
+        <div class="container container-header">
+
+        <nav class="container-header-logo">
             <a href="./index.html" class="logo"><span>Web</span>Studio</a>
 
-            <ul>
-                <li><a href="" class="navigation activ-button">Студия</a></li>
-                <li><a href="./portfolio/portfolio.html" class="navigation">Портфолио</a></li>
-                <li><a href="" class="navigation">Контакты</a></li>
+            <ul class="container-header">
+                <li class="container-header-button"><a href="" class="navigation activ-button">Студия</a></li>
+                <li class="container-header-button"><a href="./portfolio/portfolio.html" class="navigation">Портфолио</a></li>
+                <li class="container-header-button"><a href="" class="navigation">Контакты</a></li>
             </ul>
         </nav>
-        <ul>
-            <li><a href="mailto:info@devstudio.com" class="our-contacts">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111" class="our-contacts">+38 096 111 11 11</a></li>
+    
+        <ul class="container-header container-header-contacts">
+            <li class="container-header-button"><a href="mailto:info@devstudio.com" class="our-contacts">info@devstudio.com</a></li>
+            <li class="container-header-button"><a href="tel:+380961111111" class="our-contacts">+38 096 111 11 11</a></li>
         </ul>
+        </div>
     </header>
     <!-- основное меню -->
     <main>
@@ -38,21 +43,21 @@
         <section>
             <!-- наши преимущества -->
             <!-- h2 скроем с помощью css -->
-            <h2 class="about-us">наши преимущества</h2>
-            <ul>
-                <li>
+            <!-- <h2 class="about-us">наши преимущества</h2> -->
+            <ul class="container">
+                <li class="container-about-us">
                     <h3 class="our-benefits">Внимание к деталям</h3>
                     <p class="our-benefits-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                 </li>
-                <li>
+                <li class="container-about-us">
                     <h3 class="our-benefits">Пунктуальность</h3>
                     <p class="our-benefits-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                 </li>
-                <li>
+                <li class="container-about-us">
                     <h3 class="our-benefits">Планирование</h3>
                     <p class="our-benefits-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                 </li>
-                <li>
+                <li class="container-about-us">
                     <h3 class="our-benefits">Современные технологии</h3>
                     <p class="our-benefits-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
@@ -61,35 +66,36 @@
         <!-- информация о нас -->
         <section>
             <h2 class="about-us">Чем мы занимаемся</h2>
-            <ul>
-                <li><img src="./images/box1.jpg" alt="рабочее пространство сотрудника" width="370" height="294"></li>
-                <li><img src="./images/box2.jpg" alt="рабочее пространство сотрудника" width="370" height="294"></li>
-                <li><img src="./images/box3.jpg" alt="рабочее пространство сотрудника" width="370" height="294"></li>
+            <ul class="container">
+                <li class="container-images"><img src="./images/box1.jpg" alt="рабочее пространство сотрудника" width="370" height="294"></li>
+                <li class="container-images"><img src="./images/box2.jpg" alt="рабочее пространство сотрудника" width="370" height="294"></li>
+                <li class="container-images"><img src="./images/box3.jpg" alt="рабочее пространство сотрудника" width="370" height="294"></li>
             </ul>
         </section>
-        <section>
+        <section class="our-team-block">
             <!-- наша команда -->
             <h2 class="about-us">Наша команда</h2>
-            <ul>
-                <li><img src="./images/product-designer.jpg" alt="дизайнер продукта" width="270" height="260">
+            <ul class="container">
+                <li class="container-images-about-us"><img class="image-about-us" src="./images/product-designer.jpg" alt="дизайнер продукта" width="270" height="260">
                     <h3 class="our-team">Игорь Демьяненко</h3>
                     <p class="our-team-position">Product Designer</p>
                 </li>
-                <li><img src="./images/frontend-developer.jpg" alt="фронтенд разаработчик" width="270" height="260">
+                <li class="container-images-about-us"><img class="image-about-us" src="./images/frontend-developer.jpg" alt="фронтенд разаработчик" width="270" height="260">
                     <h3 class="our-team">Ольга Репина</h3>
                     <p class="our-team-position">Frontend Developer</p>
                 </li>
-                <li><img src="./images/marketing.jpg" alt="маркетолог" width="270" height="260">
+                <li class="container-images-about-us"><img class="image-about-us" src="./images/marketing.jpg" alt="маркетолог" width="270" height="260">
                     <h3 class="our-team">Николай Тарасов</h3>
                     <p class="our-team-position">Marketing</p>
                 </li>
-                <li><img src="./images/ui-designer.jpg" alt="дизайнер интерфейсовr" width="270" height="260">
+                <li class="container-images-about-us"><img class="image-about-us" src="./images/ui-designer.jpg" alt="дизайнер интерфейсовr" width="270" height="260">
                     <h3 class="our-team">Михаил Ермаков</h3>
                     <p class="our-team-position">UI Designer</p>
                 </li>
             </ul>
         </section>
     </main>
+    
     <footer class="footer">
         <!-- футер -->
         <a href="" class="logo"><span>Web</span><span class="logo-studio">Studio</span></a>
@@ -101,6 +107,7 @@
             </ul>
         </address>
     </footer>
+   
 </body>
 
 </html>
