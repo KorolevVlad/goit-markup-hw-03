@@ -1,12 +1,3 @@
-/* html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-} */
 :root {
   --basic-bg-color: #e5e5e5;
   --secondary-text-color: #212121;
@@ -32,6 +23,7 @@ body {
 .logo {
   font-family: raleway, sans-serif;
   color: var(--black-color);
+
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -40,6 +32,7 @@ body {
 .logo-studio {
   font-family: raleway, sans-serif;
   color: var(--primary-white-color);
+
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -51,66 +44,47 @@ body {
 .our-contacts {
   background-color: var(--primary-white-color);
   color: var(--secondary-text-color);
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  /* cursor: pointer; */
   text-decoration: none;
-
-  /* background-color: green; */
-  /* удалить */
-  /* background-color: green; */
 }
 
 .portfolio-border {
   border-bottom: 1px solid #ececec;
   margin-bottom: 94px;
 }
+
 .navigation,
 .our-contacts {
   padding: 32px 0;
 }
-/* h1,
-h2,
-h3,
-p,
-ul {
-  margin-top: 0;
-  margin-bottom: 0;
-} */
 
 .our-contacts {
   color: var(--basic-text-color);
 }
-/* .container-header-button:hover,
-.container-header-button:focus {
-  color: rgb(214, 18, 18);
-} */
 
 .navigation:hover,
 .navigation:focus,
 .our-contacts:focus,
 .our-contacts:hover {
   color: var(--primare-blue-color);
-  /* padding: 32px 0; */
 }
 
 /* стили контейнера хедера */
 .container,
 .container-header {
   display: flex;
-  /* width: 1200px; */
+
   margin: 0;
   margin-left: auto;
   margin-right: auto;
-  align-items: center;
   padding-left: 15px;
   padding-right: 15px;
 
-  /* outline: 2px solid red;
-
-  background-color: blue; */
+  align-items: center;
 }
 .container {
   width: 1200px;
@@ -123,22 +97,15 @@ ul {
 .container-portfolio {
   width: 1260px;
 }
-/* .container-header-logo {
-  margin-left: 0;
-  margin-right: auto;
-} */
 
 .container-header {
   display: flex;
-
-  align-items: center;
   padding-left: 15px;
   margin: 0;
   padding: 0;
   margin-left: auto;
   margin-right: auto;
-
-  /* background-color: blue; */
+  align-items: center;
 }
 
 .container-header-logo {
@@ -146,97 +113,50 @@ ul {
 
   align-items: center;
   margin-left: 15px;
-
-  /* background-color: #ccc; */
 }
 .container-header-button {
   display: flex;
   margin-left: 50px;
-  /* background-color: black; */
-
-  /* padding: 32px 0; */
-  /* cursor: pointer; */
 }
 
 .container-header-contacts {
   margin-right: 15px;
 }
-/* .container-our-contacts {
-  background-color: black;
-} */
-/* стили решения для бизнеса, кнопки заказ  */
 
-/* .solution {
-  background-color: tomato;
-  display: block;
-  margin: 0;
-  padding: 0;
-} */
+/* стили решения для бизнеса, кнопки заказ  */
 
 .solution {
   display: block;
   min-height: 600px;
   margin-bottom: 94px;
-
-  /* background-color: #red; */
 }
 .solution,
 .main-solution {
-  /* display: block; */
-
   background-color: var(--medium-dark-color);
   color: var(--primary-white-color);
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-
-  /* margin: 0;
-  padding: 0; */
-
-  /* min-height: 600px; */
-
-  /* margin-top: 0;
-  background-color: black; */
 }
-/* .solution,
-.main-solution,
-.button-write-to-us {
-  margin: 0;
-  padding: 0;
-
-  display: inline-block;
-  text-align: center;
-} */
 
 .main-solution {
-  /* width: 1200px; */
   width: 696px;
-
   margin: 0;
 
   padding-top: 200px;
-  /* padding-left: 452px;
-  padding-right: 452px;
-  padding-bottom: 280px; */
   margin-right: auto;
   margin-left: auto;
-
   margin-bottom: 30px;
-
-  /* background-color: green; */
 }
-/* h1 {
-  background-color: tomato;
-  margin: 0;
-  padding: 0;
-} */
 
 .button-write-to-us {
   background-color: var(--primare-blue-color);
   color: var(--primary-white-color);
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -245,12 +165,6 @@ ul {
   border-radius: 6px;
 
   text-align: center;
-  /* /* padding-top: 350px;
-  padding-left: 700px;
-  padding-right: 700px; */
-  /* margin-bottom: 200px; */
-
-  /* background-color: rgb(156, 114, 114); */
 }
 .button-write-to-us:hover,
 .button-write-to-us:focus {
@@ -272,7 +186,6 @@ ul {
   margin-bottom: 50px;
 }
 .container-about-us {
-  /* background-color: red; */
   margin: 0;
   padding: 0;
   margin-right: 30px;
@@ -282,6 +195,8 @@ ul {
 }
 
 .our-benefits {
+  max-width: 270px;
+
   color: var(--secondary-text-color);
   font-weight: 700;
   font-size: 14px;
@@ -291,22 +206,17 @@ ul {
 
   margin: 0;
   margin-bottom: 10px;
-  /* outline: 2px solid black; */
 }
 
 .our-benefits-text {
   margin: 0;
   max-width: 270px;
   margin-bottom: 94px;
-
-  /* outline: 2px solid black; */
 }
 .container-images {
   margin-right: 30px;
   margin-bottom: 94px;
   padding: 0;
-
-  /* outline: tomato; */
 }
 img {
   display: block;
@@ -324,8 +234,6 @@ img {
   margin-right: 30px;
   margin-bottom: 94px;
   padding: 0;
-
-  /* outline: tomato; */
 }
 
 .image-about-us {
@@ -337,6 +245,8 @@ img {
 }
 
 .our-team {
+  max-width: 270px;
+
   color: var(--secondary-text-color);
   font-style: normal;
   font-weight: 500;
@@ -344,6 +254,7 @@ img {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+
   margin: 0;
   padding: 0;
   margin-bottom: 10px;
@@ -355,6 +266,7 @@ img {
   line-height: 1.71;
   text-align: center;
   letter-spacing: 0.03em;
+
   margin: 0;
   padding: 0;
   margin-bottom: 30px;
@@ -393,10 +305,6 @@ span {
   letter-spacing: 0.03em;
   color: var(--primary-white-color);
 }
-/* .footer-style {
-  background-color: red;
-  display: inline-block;
-} */
 
 ul {
   list-style: none;
@@ -407,6 +315,7 @@ ul {
 .button-portfolio {
   background-color: #f5f4fa;
   font-family: Roboto sans-serif;
+
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -439,18 +348,19 @@ ul {
 }
 /* выделение текущей вкладки */
 .activ-button {
+  color: var(--primare-blue-color);
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  color: var(--primare-blue-color);
 }
 /* фокус и ховер кнопок */
 .button-portfolio:hover,
 .button-portfolio:focus {
   color: var(--primary-white-color);
   background-color: var(--primare-blue-color);
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -464,6 +374,7 @@ ul {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
   margin: 0;
   padding: 0;
   margin-bottom: 4px;
@@ -480,6 +391,7 @@ ul {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--basic-text-color);
+
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
@@ -491,7 +403,13 @@ ul {
   margin-right: 30px;
   margin-bottom: 30px;
   padding: 0;
+
+  border: 1px solid #eeeeee;
 }
+.hidden-block {
+  margin-top: -30px;
+}
+
 .container-projects:nth-child(3n) {
   margin-right: 0;
 }
@@ -501,4 +419,10 @@ ul {
 .our-projects-web {
   cursor: pointer;
   text-decoration: none;
+}
+
+/* скроем вспомогательный текст */
+
+.hidden-block-two {
+  display: none;
 }
