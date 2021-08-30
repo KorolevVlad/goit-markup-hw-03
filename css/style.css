@@ -28,6 +28,8 @@ body {
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
+
+  margin-right: 94px;
 }
 .logo-studio {
   font-family: raleway, sans-serif;
@@ -42,6 +44,8 @@ body {
 .contact-us,
 .navigation,
 .our-contacts {
+  display: block;
+
   background-color: var(--primary-white-color);
   color: var(--secondary-text-color);
 
@@ -52,7 +56,7 @@ body {
   text-decoration: none;
 }
 
-.portfolio-border {
+.header-border {
   border-bottom: 1px solid #ececec;
 }
 
@@ -78,10 +82,10 @@ body {
   display: flex;
 
   margin: 0;
-  margin-left: auto;
+  /* margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
-  padding-right: 15px;
+  padding-right: 15px; */
 
   align-items: center;
 }
@@ -91,45 +95,55 @@ body {
   align-items: center;
 
   flex-wrap: wrap;
+
   justify-content: center;
 
-  padding-bottom: 94px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 .container-portfolio {
   box-sizing: content-box;
 }
 
-.container-header {
-  display: flex;
+/* .container-header {
   padding-left: 15px;
   margin: 0;
   padding: 0;
-  margin-left: auto;
-  margin-right: auto;
+
   align-items: center;
-}
+} */
 
 .container-header-logo {
   display: flex;
 
   align-items: center;
-  margin-left: 15px;
+  /* margin-left: 15px; */
 }
 .container-header-button {
   display: flex;
   margin-left: 50px;
 }
+.container-header-button:first-child {
+  margin-left: 0;
+}
 
 .container-header-contacts {
-  margin-right: 15px;
+  margin-left: auto;
+
+  /* margin-right: 15px;
+} */
 }
 
 /* стили решения для бизнеса, кнопки заказ  */
 
 .solution {
-  display: block;
-  min-height: 600px;
-  padding-bottom: 94px;
+  /* display: block; */
+  /* min-height: 600px; */
+  /* padding-bottom: 94px; */
+
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .solution,
 .main-solution {
@@ -145,12 +159,12 @@ body {
 }
 
 .main-solution {
-  width: 696px;
-  margin: 0;
+  max-width: 696px;
+  margin: 0 auto;
 
-  padding-top: 200px;
-  margin-right: auto;
-  margin-left: auto;
+  /* padding-top: 200px; */
+  /* margin-right: auto;
+  margin-left: auto; */
   margin-bottom: 30px;
 }
 
@@ -167,6 +181,10 @@ body {
 
   text-align: center;
 }
+
+.button-display {
+  flex-direction: column;
+}
 .button-write-to-us:hover,
 .button-write-to-us:focus {
   background-color: #188ce8;
@@ -174,6 +192,10 @@ body {
 }
 /* стили сраницы с преимуществами, нашей командой*/
 /*  стили сетки блока преимуществ */
+.main-menu {
+  padding-bottom: 94px;
+}
+
 .about-us {
   color: var(--secondary-text-color);
   font-weight: 700;
@@ -191,9 +213,9 @@ body {
   padding: 0;
   margin-right: 30px;
 
-  max-width: 270px;
+  width: 270px;
 
-  padding-top: 94px;
+  /* padding-top: 94px; */
 }
 .container-about-us:last-child {
   margin-right: 0;
@@ -218,6 +240,7 @@ body {
   margin-right: 30px;
   padding-bottom: 94px;
   padding: 0;
+  width: 370px;
 }
 img {
   display: block;
@@ -230,23 +253,35 @@ img {
   background-color: #f5f4fa;
   padding-top: 94px;
 }
+.display {
+  display: flex;
+}
+
 .container-images-about-us {
+  /* display: flex; */
+
   background-color: #fff;
   margin-right: 30px;
 
   padding: 0;
 
-  max-width: 270px;
+  width: 270px;
 
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  margin-bottom: 94px;
 }
 
-.image-about-us {
-  margin-bottom: 30px;
+.about-our-team {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
+
+/* .image-about-us {
+  margin-bottom: 30px;
+} */
 
 .container-images-about-us:last-child {
   margin-right: 0;
@@ -275,7 +310,7 @@ img {
 
   margin: 0;
   padding: 0;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 /* стиль лого Web */
 span {
@@ -283,8 +318,9 @@ span {
 }
 /* стили футера */
 .footer {
-  display: block;
-  width: 1200px;
+  /* display: block;
+  width: 1200px; */
+  /* display: flex; */
 
   background-color: var(--medium-dark-color);
   text-align: left;
@@ -436,5 +472,5 @@ ul {
 /* скроем вспомогательный текст */
 
 .hidden-block-two {
-  display: none;
+  visibility: hidden;
 }
