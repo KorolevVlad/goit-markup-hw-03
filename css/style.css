@@ -87,8 +87,6 @@ body {
 /* стили основного контейнера */
 .container {
   width: 1200px;
-  display: flex;
-  align-items: center;
 
   flex-wrap: wrap;
   justify-content: center;
@@ -180,6 +178,11 @@ body {
 .main-menu {
   padding-bottom: 94px;
   padding-top: 94px;
+}
+
+.main-menu-our-benefits {
+  padding-top: 0;
+  padding-bottom: 94px;
 }
 
 .about-us {
@@ -441,7 +444,7 @@ ul {
   background-color: #fff;
   margin-right: 30px;
   margin-bottom: 30px;
-  padding: 0;
+  /* padding: 0; */
   max-width: 370px;
 }
 
