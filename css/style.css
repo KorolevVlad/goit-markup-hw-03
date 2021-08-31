@@ -104,7 +104,7 @@ body {
   flex-wrap: wrap;
 }
 
-.container-portfolio-page {
+.section-portfolio-main-menu {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -179,6 +179,7 @@ body {
 /*  стили сетки блока преимуществ */
 .main-menu {
   padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 .about-us {
@@ -222,8 +223,6 @@ body {
 
 .container-images {
   margin-right: 30px;
-  padding-bottom: 94px;
-  padding: 0;
   width: 370px;
 }
 
@@ -248,7 +247,6 @@ img {
 
 .display-hidden {
   display: flex;
-  padding-top: 94px;
 }
 
 .container-images-about-us {
@@ -326,7 +324,11 @@ span {
   text-align: left;
 }
 
-.footer-contacts-decoration {
+.footer-contacts-decoration:last-child {
+  margin-top: 9px;
+}
+
+.footer-contacts-decoration-list {
   margin-top: 9px;
 }
 
@@ -444,9 +446,7 @@ ul {
 }
 
 .portfolio-about-our-works {
-  padding-left: 24px;
-  padding-bottom: 20px;
-  padding-top: 20px;
+  padding: 20px 24px;
 
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
